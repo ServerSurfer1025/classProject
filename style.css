@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "menu main main main main right"
+    "menu footer footer footer footer right";
+  gap: 10px;
+  background-color: #fff;
+  padding: 10px;
+  margin: 0 auto;
+  width: auto;
+}
+
+.grid-container > * {
+  text-align: center;
+  padding: 20px 0px;
+  font-size: 25px;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-areas: "header" "menu" "main" "right" "footer";
+    padding: 10px 0px;
+    width: 100%;
+  }
+}
+
+header {
+  grid-area: header;
+  background-color: #20a4f3;
+}
+
+main {
+  grid-area: main;
+}
+
+.columnRight {
+  grid-area: menu;
+}
+
+.columnLeft {
+  grid-area: right;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.navbarContainer {
+  width: auto;
+  padding: 10px;
+  margin: 5px;
+  min-height: 100px;
+  text-align: center;
+}
+
+.navbar {
+  width: auto;
+  height: 150px;
+  list-style-type: none;
+  overflow: hidden;
+  min-height: 50px;
+  text-align: center;
+  margin: 0px 75px 0px 75px;
+  cursor: crosshair;
+}
+
+.navbar li {
+  float: left;
+  text-align: center;
+}
+
+.navbar li a {
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  margin: 20px;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: crosshair;
+}
+
+.navbar li a:hover {
+  background-color: white;
+}
+
+#logo {
+  width: 115px;
+}
+
+.floatRight {
+  margin-top: 45px;
+  float: right;
+}
+
+.floatLeft {
+  margin-top: 45px;
+  float: left;
+}
