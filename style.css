@@ -1,31 +1,33 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
+  cursor: crosshair;
 }
 
 .grid-container {
   display: grid;
   grid-template-areas:
     "header header header header header header"
-    "menu main main main main right"
-    "menu footer footer footer footer right";
+    "menu main main main main main"
+    "menu footer footer footer footer footer";
   gap: 10px;
-  background-color: #fff;
   padding: 10px;
   margin: 0 auto;
   width: auto;
+  background-color: #20a4f3;
 }
 
 .grid-container > * {
   text-align: center;
   padding: 20px 0px;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 @media (max-width: 768px) {
   .grid-container {
-    grid-template-areas: "header" "menu" "main" "right" "footer";
-    padding: 10px 0px;
+    grid-template-areas: "header" "main" "menu" "footer";
+    padding: 0 10px 0 10px;
     width: 100%;
   }
 }
@@ -39,24 +41,21 @@ main {
   grid-area: main;
 }
 
-.columnRight {
+aside {
   grid-area: menu;
-}
-
-.columnLeft {
-  grid-area: right;
 }
 
 footer {
   grid-area: footer;
 }
 
+/* header content */
 .navbarContainer {
   width: auto;
-  padding: 10px;
   margin: 5px;
   min-height: 100px;
   text-align: center;
+  border-bottom: solid 4px white;
 }
 
 .navbar {
@@ -91,6 +90,10 @@ footer {
   background-color: white;
 }
 
+.navbar li:nth-child(3) a:hover {
+  background-color: #ff336665;
+}
+
 #logo {
   width: 115px;
 }
@@ -103,4 +106,71 @@ footer {
 .floatLeft {
   margin-top: 45px;
   float: left;
+}
+
+/* main content */
+
+.mainWrap {
+  background-color: #011627;
+  border: solid 5px white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+h1 {
+  color: #ff3366;
+  text-decoration-line: underline;
+  text-decoration-color: #2ec4b6;
+  text-underline-offset: 8px;
+}
+
+#hp1 {
+  font-size: 20px;
+  text-align: justify;
+  padding: 30px;
+  color: white;
+}
+
+.span1 {
+  color: #ff3366;
+}
+
+/* table content*/
+
+.tableWrap {
+  color: white;
+  width: auto;
+}
+
+.tableContent {
+  text-align: center;
+}
+
+.tableHead-4 {
+  border-radius: 10px;
+}
+
+#rowImg-Two {
+  width: 190px;
+  border-radius: 10px;
+}
+
+/* sidebar content */
+
+.leftContent {
+  width: 200px;
+  background-color: #011627;
+  border: solid 2px white;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+.test-Container {
+  width: 190px;
+  padding: 0 5px 0 5px;
+}
+
+.test-1 {
+  font-size: 15px;
 }
