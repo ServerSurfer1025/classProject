@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
@@ -17,12 +17,18 @@
         <header>
             <div class="navbarContainer">
                 <ul class="navbar">
-                    <li class="floatLeft"><a id="front" href="./frontend.html">Frontend Development</a></li>
-                    <li class="floatLeft"><a href="./backend.html">Backend Development</a></li>
-                    <li class="centerLogo"><a href="./index.html"><img id="logo" src="./images/logo2.png"
+                    <li class="floatLeft"><a href="./frontend.html"><img class="navIcon"
+                                src="./images/frontendIcon-2.png" alt="computer Icon">
+                            Frontend Development</a></li>
+                    <li class="floatLeft"><a href="./backend.html"><img class="navIcon" src="./images/reactsIcon.png"
+                                alt=""> Backend Development</a></li>
+                    <li class="centerLogo"><a href="#"><img id="logo" src="./images/logo2.png"
                                 alt="The is an image of the home page, it's also the home button"></a></li>
-                    <li class="floatRight"><a href="./graphics.html">Graphic Design</a></li>
-                    <li class="floatRight"><a href="./uiUx.html">UI/UX Design</a></li>
+                    <li class="floatRight"><a href="./graphics.html"><img class="navIcon"
+                                src="./images/graphicDesignIcon.png" alt=""> Graphic Design</a></li>
+                    <li class="floatRight"><a href="./uiUx.html"><img class="navIcon" src="./images/ux-Icon.png" alt="">
+                            UI/UX
+                            Design</a></li>
                 </ul>
             </div>
         </header>
@@ -35,7 +41,7 @@
                         journey of curious minds
                         into
                         the dynamic realm of
-                        the World Wide Web and its myriad components. Our boot camp is designed to nurture cohorts from
+                        the World Wide Web and its myriad components. Our bootcamp is designed to nurture cohorts from
                         the
                         very foundations,
                         providing them with an immersive learning experience that covers every facet of the digital
@@ -53,28 +59,89 @@
                     </p>
                 </div>
                 <div class="tableWrap">
+                    <h2></h2>
                     <table class="tableContent">
                         <tr>
-                            <th>Contact</th>
-                            <th>Country</th>
-                            <th></th>
-                            <th class="tableHead-4">
-                                <img id="rowImg-Two" src="./images/userInterface.jpg" alt="">
+                            <th class="tableHeader-One">
+                                <img id="rowImg-One" src="./images/frontendCode.jpg" alt="">
+                            </th>
+                            <th class="tableHeader-Two">
+                                <img id="rowImg-Two" src="./images/backendCode.jpg" alt="">
+                            </th>
+                            <th class="tableHeader-Three">
+                                <img id="rowImg-Three" src="./images/graphicDesign.jpg" alt="">
+                            </th>
+                            <th class="tableHeader-Four">
+                                <img id="rowImg-Four" src="./images/userInterface.jpg" alt="">
                             </th>
                         </tr>
                         <tr>
-                            <td>Alfreds Futterkiste</td>
-                            <td>Maria Anders</td>
-                            <td>Germany</td>
                             <td>
-                                <h3 class="tableHead"> Ux/Ui Design</h3>
+                                <h3>Frontend Development</h3>
+                            </td>
+                            <td>
+                                <h3>Backend Development</h3>
+                            </td>
+                            <td>
+                                <h3>Graphic Design</h3>
+                            </td>
+                            <td>
+                                <h3 class="tableHeadFour"> UX/UI Design</h3>
                             </td>
                         </tr>
                         <tr>
-                            <td>Centro comercial Moctezuma</td>
-                            <td>Francisco Chang</td>
-                            <td>Mexico</td>
-                            <td></td>
+                            <td class="shortDescription-One">
+                                <p class="tableDescription-Two">
+                                    Unleash your potential in frontend development at House Of Terrian. Master HTML,
+                                    CSS, and JavaScript to create
+                                    captivating user experiences. Our expert-guided program equips you to shape
+                                    responsive, interactive digital interfaces.
+                                    Elevate your career with the skills needed to excel in the ever-evolving web
+                                    industry.
+                                </p>
+                            </td>
+                            <td class="shortDescription-Two">
+                                <p class="tableDescription-Two">
+                                    Dive into the world of backend development at House Of Terrian. From databases to
+                                    server logic, our program hones your
+                                    skills in crafting robust digital foundations. Explore languages like Python, Ruby,
+                                    and more, guided by experts. Gain
+                                    the expertise to power the web's core and drive innovation.
+                                </p>
+                            </td>
+                            <td class="shortDescription-Three">
+                                <p class="tableDescription-Three">
+                                    Ignite your creative journey with House Of Terrian's Graphic Design program. Learn
+                                    to visually communicate ideas using
+                                    industry-standard tools and techniques. From typography to visual storytelling, our
+                                    expert-led course empowers you to
+                                    craft compelling designs for the digital age. Elevate your artistic passion into a
+                                    dynamic career.
+                                </p>
+                            </td>
+                            <td class="shortDescription-Four">
+                                <p class="tableDescription">
+                                    Immerse yourself in the world of UI/UX with House Of Terrian. Our program delves
+                                    into user-centric design, blending
+                                    aesthetics and functionality. Learn wireframing, prototyping, and user research to
+                                    create seamless digital experiences.
+                                    Guided by experts, you'll master the skills to shape the future of user interaction.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button>Learn More</button>
+                            </td>
+                            <td>
+                                <button>Learn More</button>
+                            </td>
+                            <td>
+                                <button>Learn More</button>
+                            </td>
+                            <td>
+                                <button>Learn More</button>
+                            </td>
                         </tr>
                     </table>
                 </div>
@@ -83,12 +150,13 @@
         <aside>
             <div class="leftContent">
                 <div class="test-Container">
-                    <h2> Testimonies</h2>
+                    <h3> Testimonies</h3>
                     <div class="test-1">
                         <p>
                             I was between a rock and a hard place with my career, I ran across the House Of Terrian
                             bootcamp. I believe it was God sent because My life has not been the same for all the right
-                            reasons. - Paolo Gracia
+                            reasons. <br>
+                            - Paolo Gracia
                         </p>
                     </div>
                 </div>
