@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  cursor: crosshair;
+  background-color: #20a4f3;
+  color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "menu main main main main main"
+    "menu footer footer footer footer footer";
+  gap: 10px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.grid-container > * {
+  text-align: center;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-areas: "header" "main" "menu" "footer";
+    padding: 0 10px 0 10px;
+    width: 100%;
+  }
+}
+
+header {
+  grid-area: header;
+  margin-top: -10px;
+  height: 180px;
+  background-color: #011627;
+  border-bottom: solid 4px white;
+}
+
+main {
+  grid-area: main;
+  margin-top: 20px;
+}
+
+aside {
+  grid-area: menu;
+  margin-top: 20px;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/* header content */
+
+.navbarContainer {
+  min-height: 120px;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  padding: 15px;
+  margin-left: 90px;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: white;
+  border: solid 2px #011627;
+  margin-left: 25px;
+}
+
+.navbar li:nth-child(3) a {
+  background-color: #2ec4b6;
+}
+
+.navbar li a:hover {
+  color: white;
+  background-color: #011627;
+  border: solid 2px #ff3366;
+  transition: 0.5s;
+}
+
+.navbar li:nth-child(3) a:hover {
+  background-color: #011627;
+  border: solid 2px white;
+  background-color: #011627;
+  border: solid 2px white;
+  transition: 0.5s;
+}
+
+#logo {
+  width: 113px;
+  height: 113px;
+}
+
+.navIcon {
+  width: 30px;
+  margin-bottom: -5px;
+}
+
+.floatRight {
+  margin-top: 45px;
+}
+
+.floatLeft {
+  text-align: center;
+  margin-top: 45px;
+}
+
+@media screen and (max-width: 1265px) {
+  header {
+    min-height: 282px;
+    position: relative;
+  }
+
+  .navbarContainer {
+    margin-left: 25%;
+    display: block;
+    position: absolute;
+  }
+
+  .navbar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .navbar li {
+    float: none;
+    display: block;
+    margin: 0;
+    width: 350px;
+  }
+
+  #logo {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 1319px) {
+  .navbar li a {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 1319px) {
+  .navbar {
+    margin-left: 60px;
+  }
+}
+
+@media (min-width: 1445px) {
+  .navbar {
+    margin-left: 190px;
+  }
+}
+
+@media (min-width: 1650px) {
+  .navbar {
+    margin-left: 290px;
+  }
+}

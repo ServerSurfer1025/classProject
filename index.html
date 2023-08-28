@@ -17,18 +17,21 @@
         <header>
             <div class="navbarContainer">
                 <ul class="navbar">
-                    <li class="floatLeft"><a href="./frontend.html"><img class="navIcon"
+                    <li class="floatLeft"><a href="./frontend.html" target="_blank"><img class="navIcon"
                                 src="./images/frontendIcon-2.png" alt="computer Icon">
                             Frontend Development</a></li>
-                    <li class="floatLeft"><a href="./backend.html"><img class="navIcon" src="./images/reactsIcon.png"
-                                alt=""> Backend Development</a></li>
+                    <li class="floatLeft"><a href="./backend.html" target="_blank"><img class="navIcon"
+                                src="./images/reactsIcon.png" alt=""> Backend Development</a></li>
                     <li class="centerLogo"><a href="#"><img id="logo" src="./images/logo2.png"
                                 alt="The is an image of the home page, it's also the home button"></a></li>
-                    <li class="floatRight"><a href="./graphics.html"><img class="navIcon"
+                    <li class="floatRight"><a href="./graphics.html" target="_blank"><img class="navIcon"
                                 src="./images/graphicDesignIcon.png" alt=""> Graphic Design</a></li>
-                    <li class="floatRight"><a href="./uiUx.html"><img class="navIcon" src="./images/ux-Icon.png" alt="">
+                    <li class="floatRight">
+                        <a href="./uiUx.html" target="_blank">
+                            <img class="navIcon" src="./images/ux-Icon.png" alt="">
                             UI/UX
-                            Design</a></li>
+                            Design</a>
+                    </li>
                 </ul>
             </div>
         </header>
@@ -58,92 +61,59 @@
                         its future. Join us, and let's embark on a transformative journey together at House Of Terrian.
                     </p>
                 </div>
-                <div class="tableWrap">
-                    <h2></h2>
-                    <table class="tableContent">
-                        <tr>
-                            <th class="tableHeader-One">
-                                <img id="rowImg-One" src="./images/frontendCode.jpg" alt="">
-                            </th>
-                            <th class="tableHeader-Two">
-                                <img id="rowImg-Two" src="./images/backendCode.jpg" alt="">
-                            </th>
-                            <th class="tableHeader-Three">
-                                <img id="rowImg-Three" src="./images/graphicDesign.jpg" alt="">
-                            </th>
-                            <th class="tableHeader-Four">
-                                <img id="rowImg-Four" src="./images/userInterface.jpg" alt="">
-                            </th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h3>Frontend Development</h3>
-                            </td>
-                            <td>
-                                <h3>Backend Development</h3>
-                            </td>
-                            <td>
-                                <h3>Graphic Design</h3>
-                            </td>
-                            <td>
-                                <h3 class="tableHeadFour"> UX/UI Design</h3>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="shortDescription-One">
-                                <p class="tableDescription-Two">
-                                    Unleash your potential in frontend development at House Of Terrian. Master HTML,
-                                    CSS, and JavaScript to create
-                                    captivating user experiences. Our expert-guided program equips you to shape
-                                    responsive, interactive digital interfaces.
-                                    Elevate your career with the skills needed to excel in the ever-evolving web
-                                    industry.
-                                </p>
-                            </td>
-                            <td class="shortDescription-Two">
-                                <p class="tableDescription-Two">
-                                    Dive into the world of backend development at House Of Terrian. From databases to
-                                    server logic, our program hones your
-                                    skills in crafting robust digital foundations. Explore languages like Python, Ruby,
-                                    and more, guided by experts. Gain
-                                    the expertise to power the web's core and drive innovation.
-                                </p>
-                            </td>
-                            <td class="shortDescription-Three">
-                                <p class="tableDescription-Three">
-                                    Ignite your creative journey with House Of Terrian's Graphic Design program. Learn
-                                    to visually communicate ideas using
-                                    industry-standard tools and techniques. From typography to visual storytelling, our
-                                    expert-led course empowers you to
-                                    craft compelling designs for the digital age. Elevate your artistic passion into a
-                                    dynamic career.
-                                </p>
-                            </td>
-                            <td class="shortDescription-Four">
-                                <p class="tableDescription">
-                                    Immerse yourself in the world of UI/UX with House Of Terrian. Our program delves
-                                    into user-centric design, blending
-                                    aesthetics and functionality. Learn wireframing, prototyping, and user research to
-                                    create seamless digital experiences.
-                                    Guided by experts, you'll master the skills to shape the future of user interaction.
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <button>Learn More</button>
-                            </td>
-                            <td>
-                                <button>Learn More</button>
-                            </td>
-                            <td>
-                                <button>Learn More</button>
-                            </td>
-                            <td>
-                                <button>Learn More</button>
-                            </td>
-                        </tr>
-                    </table>
+                <div class="columnContainer">
+                    <h2>Offered Programs</h2>
+                    <div class="column">
+                        <img id="rowImg-One" src="./images/frontendCode.jpg" alt="">
+                        <h3>Frontend Development</h3>
+                        <p class="columnDescription-One">
+                            Unleash your potential in frontend development at House Of Terrian. Master HTML,
+                            CSS, and JavaScript to create captivating user experiences. Our expert-guided
+                            program equips you to shape
+                            responsive, interactive digital interfaces. Elevate your career with the skills
+                            needed to excel in the ever-evolving web
+                            industry.
+                        </p>
+                        <button class="nav-button" id="frontendButton">Proceed to Frontend</button>
+                    </div>
+                    <div class="column">
+                        <img id="rowImg-Two" src="./images/backendCode.jpg" alt="">
+                        <h3>Backend Development</h3>
+                        <p class="columnDescription-Two">
+                            Dive into the world of backend development at House Of Terrian. From databases to
+                            server logic, our program hones your
+                            skills in crafting robust digital foundations. Explore languages like Python, Ruby,
+                            and more, guided by experts. Gain
+                            the expertise to power the web's core and drive innovation.
+                        </p>
+                        <button class="nav-button" id="backendButton">Proceed to Backend</button>
+                    </div>
+                    <div class="column">
+                        <img id="rowImg-Three" src="./images/graphicDesign.jpg" alt="">
+                        <h3>Graphic Design</h3>
+                        <p class="columnDescription-Three">
+                            Ignite your creative journey with House Of Terrian's Graphic Design program. Learn
+                            to visually communicate ideas using
+                            industry-standard tools and techniques. From typography to visual storytelling, our
+                            expert-led course empowers you to
+                            craft compelling designs for the digital age. Elevate your artistic passion into a
+                            dynamic career.
+                        </p>
+                        <button class="nav-button" id="graphicsButton">Proceed to Graphics</button>
+                    </div>
+                    <div class="column">
+                        <img id="rowImg-Four" src="./images/userInterface.jpg" alt="">
+                        <h3> UX/UI Design</h3>
+                        <p class="columnDescription-Three">
+                            Ignite your creative journey with House Of Terrian's Graphic Design program. Learn
+                            to visually communicate ideas using
+                            industry-standard tools and techniques. From typography to visual storytelling, our
+                            expert-led course empowers you to
+                            craft compelling designs for the digital age. Elevate your artistic passion into a
+                            dynamic career.
+                        </p>
+                        <button class="nav-button" id="uiUxButton">Proceed to UI/UX</button>
+                    </div>
                 </div>
             </div>
         </main>
@@ -152,20 +122,43 @@
                 <div class="test-Container">
                     <h3> Testimonies</h3>
                     <div class="test-1">
-                        <p>
-                            I was between a rock and a hard place with my career, I ran across the House Of Terrian
+                        <p class="testOnepara">
+                            "I was between a rock and a hard place with my career, I ran across the House Of Terrian
                             bootcamp. I believe it was God sent because My life has not been the same for all the right
-                            reasons. <br>
-                            - Paolo Gracia
+                            reasons." <br>
+                            - <span class="span2"> Paolo Gracia </span>
+                        </p>
+                    </div>
+                    <div class="test-2">
+                        <p class="testTwopara">
+                            "House Of Terrian has been a game-changer for my career. The frontend development program
+                            gave me the skills and
+                            confidence to excel in the industry. The hands-on approach and expert guidance were
+                            invaluable. Highly recommended!" <br> - <span class="span2"> Shawnna Heck </span>
+                        </p>
+                    </div>
+                    <div class="test-3">
+                        <p class="testThreepara">
+                            "I can't thank House Of Terrian enough for their graphic design program. It transformed my
+                            passion into a profession.
+                            The curriculum is comprehensive, and the instructors are top-notch. I'm proud to be a
+                            graduate!" <br> - <span class="span2">Brianna Canning</span>
                         </p>
                     </div>
                 </div>
             </div>
         </aside>
         <footer>
-
+            <div class="footerWrap">
+                <p class="tradeMark">
+                    © 2023 Houseofterrian.com - All Rights Reserved.
+                </p>
+            </div>
         </footer>
     </div>
+    <script src="script.js">
+
+    </script>
 </body>
 
 </html>

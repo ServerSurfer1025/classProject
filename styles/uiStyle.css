@@ -1,30 +1,31 @@
 body {
   margin: 0;
-  padding: 0;
   font-family: "Poppins", sans-serif;
+  font-size: 20px;
   cursor: crosshair;
+  background-color: #20a4f3;
+  max-width: 1900px;
 }
 
 .grid-container {
   display: grid;
   grid-template-areas:
     "header header header header header header"
-    "main main main main main main"
+    "menu main main main main main"
     "menu footer footer footer footer footer";
   gap: 10px;
   padding: 10px;
   margin: 0 auto;
-  width: auto;
-  background-color: #20a4f3;
+  max-width: auto;
 }
 
 .grid-container > * {
   text-align: center;
-  padding: 20px 0px;
-  font-size: 20px;
+  padding: 5px 10px;
+  width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .grid-container {
     grid-template-areas: "header" "main" "menu" "footer";
     padding: 0 10px 0 10px;
@@ -34,15 +35,17 @@ body {
 
 header {
   grid-area: header;
-  background-color: #20a4f3;
+  margin-top: -10px;
 }
 
 main {
   grid-area: main;
+  margin-top: 20px;
 }
 
 aside {
   grid-area: menu;
+  margin-top: 20px;
 }
 
 footer {
@@ -50,299 +53,38 @@ footer {
 }
 
 /* header content */
-.navbarContainer {
-  width: auto;
-  margin: 5px;
-  min-height: 100px;
-  text-align: center;
-  border-bottom: solid 4px white;
-}
 
-.navbar {
-  width: auto;
-  height: 150px;
-  list-style-type: none;
-  overflow: hidden;
-  min-height: 50px;
-  text-align: center;
-  margin: 10px;
-  padding: 10px;
-}
-
-.navbar li {
-  float: left;
-  text-align: center;
-}
-
-.navbar li a {
-  display: block;
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  margin: 20px;
-  font-size: 20px;
-  padding: 5px;
-  border-radius: 10px;
-  background-color: white;
-  border: solid 2px #011627;
-}
-
-.navbar li:nth-child(3) a {
-  background-color: #2ec4b6;
-}
-
-.navbar li a:hover {
-  background-color: white;
-  border: solid 2px #ff3366;
-}
-
-.navbar li:nth-child(3) a:hover {
-  background-color: #011627;
-  border: solid 2px white;
-}
-
-#logo {
-  width: 115px;
-}
-
-.navIcon {
-  width: 30px;
-  margin-bottom: -5px;
-}
-
-.floatRight {
-  margin-top: 45px;
+.form {
+  margin: 5px 0 0 0;
   float: right;
 }
 
-.floatLeft {
-  text-align: center;
-  margin-top: 45px;
-  float: left;
-}
-
-/* main content */
-
-.mainWrap {
-  background-color: #011627;
-  border: solid 4px white;
-  border-radius: 10px;
-  text-align: center;
-}
-
-h1 {
-  color: #ff3366;
-  text-decoration-line: underline;
-  text-decoration-color: #2ec4b6;
-  text-underline-offset: 8px;
-}
-
-#hp1 {
-  font-size: 20px;
-  text-align: justify;
-  padding: 30px;
-  color: white;
-}
-
-.span1 {
-  color: #ff3366;
-}
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-  cursor: crosshair;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    "header header header header header header"
-    "main main main main main main"
-    "menu footer footer footer footer footer";
-  gap: 10px;
-  padding: 10px;
-  margin: 0 auto;
-  width: auto;
-  background-color: #20a4f3;
-}
-
-.grid-container > * {
-  text-align: center;
-  padding: 20px 0px;
-  font-size: 20px;
-}
-
-@media (max-width: 768px) {
-  .grid-container {
-    grid-template-areas: "header" "main" "menu" "footer";
-    padding: 0 10px 0 10px;
-    width: 100%;
-  }
-}
-
-header {
-  grid-area: header;
-  background-color: #20a4f3;
-}
-
-main {
-  grid-area: main;
-}
-
-aside {
-  grid-area: menu;
-}
-
-footer {
-  grid-area: footer;
-}
-
-/* header content */
-.navbarContainer {
-  width: auto;
-  margin: 5px;
-  min-height: 100px;
-  text-align: center;
-  border-bottom: solid 4px white;
-}
-
-.navbar {
-  width: auto;
-  height: 150px;
-  list-style-type: none;
-  overflow: hidden;
-  min-height: 50px;
-  text-align: center;
-  margin: 10px;
-  padding: 10px;
-}
-
-.navbar li {
-  float: left;
-  text-align: center;
-}
-
-.navbar li a {
-  display: block;
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  margin: 20px;
-  font-size: 20px;
-  padding: 5px;
-  border-radius: 10px;
-  background-color: white;
-  border: solid 2px #011627;
-}
-
-.navbar li:nth-child(3) a {
+#topButton {
   background-color: #2ec4b6;
-}
-
-.navbar li a:hover {
-  background-color: white;
-  border: solid 2px #ff3366;
-}
-
-.navbar li:nth-child(3) a:hover {
-  background-color: #011627;
-  border: solid 2px white;
-}
-
-#logo {
-  width: 115px;
-}
-
-.navIcon {
-  width: 30px;
-  margin-bottom: -5px;
-}
-
-.floatRight {
-  margin-top: 45px;
-  float: right;
-}
-
-.floatLeft {
-  text-align: center;
-  margin-top: 45px;
-  float: left;
-}
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-  cursor: crosshair;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    "header header header header header header"
-    "main main main main main main"
-    "menu footer footer footer footer footer";
-  gap: 10px;
   padding: 10px;
-  margin: 0 auto;
-  width: auto;
-  background-color: #20a4f3;
+  border: 3px solid #011627;
+  border-radius: 50px;
+  font-size: 12px;
 }
 
-.grid-container > * {
-  text-align: center;
-  padding: 20px 0px;
-  font-size: 20px;
-}
-
-@media (max-width: 768px) {
-  .grid-container {
-    grid-template-areas: "header" "main" "menu" "footer";
-    padding: 0 10px 0 10px;
-    width: 100%;
-  }
-}
-
-header {
-  grid-area: header;
-  background-color: #20a4f3;
-}
-
-main {
-  grid-area: main;
-}
-
-aside {
-  grid-area: menu;
-}
-
-footer {
-  grid-area: footer;
-}
-
-/* header content */
 .navbarContainer {
-  width: auto;
-  margin: 5px;
-  min-height: 100px;
-  text-align: center;
   border-bottom: solid 4px white;
 }
 
 .navbar {
-  width: auto;
-  height: 150px;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
-  min-height: 50px;
   text-align: center;
-  margin: 10px;
-  padding: 10px;
+  padding: 15px;
+  margin-left: 30px;
+  max-width: auto;
 }
 
 .navbar li {
   float: left;
-  text-align: center;
+  margin-left: 75px;
 }
 
 .navbar li a {
@@ -350,7 +92,7 @@ footer {
   color: black;
   text-align: center;
   text-decoration: none;
-  margin: 20px;
+  margin: 17px;
   font-size: 20px;
   padding: 5px;
   border-radius: 10px;
