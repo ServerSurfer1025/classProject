@@ -97,6 +97,7 @@ footer {
   background-color: #011627;
   border: solid 2px #ff3366;
   transition: 0.5s;
+  cursor: crosshair;
 }
 
 .navbar li:nth-child(3) a:hover {
@@ -105,6 +106,7 @@ footer {
   background-color: #011627;
   border: solid 2px white;
   transition: 0.5s;
+  cursor: crosshair;
 }
 
 #logo {

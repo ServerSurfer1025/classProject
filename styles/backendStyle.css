@@ -97,12 +97,14 @@ footer {
   background-color: #011627;
   border: solid 2px #ff3366;
   transition: 0.5s;
+  cursor: crosshair;
 }
 
 .navbar li:nth-child(3) a:hover {
   background-color: #011627;
   border: solid 2px white;
   transition: 0.5s;
+  cursor: crosshair;
 }
 
 #logo {
@@ -182,6 +184,7 @@ footer {
 /* main Content*/
 
 .mainWrap {
+  margin-right: 10px;
   padding: 10px;
   background-color: #011627;
   border: solid 4px white;
@@ -258,12 +261,8 @@ h3 {
   color: #20a4f3;
 }
 
-.listMain {
-  font-size: 16px;
-  text-align: left;
-  margin-left: 20px;
-  list-style: upper-roman;
-  color: #20a4f3;
+.listMain li {
+  margin-top: 5px;
 }
 
 .lastParawrap {
@@ -302,6 +301,7 @@ h3 {
   color: #ff3366;
   border: solid 2px white;
   transition: 0.5s;
+  cursor: crosshair;
 }
 
 /* aside content */
